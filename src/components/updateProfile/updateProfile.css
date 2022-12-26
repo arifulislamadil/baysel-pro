@@ -1,0 +1,58 @@
+.profile-pic-main{
+    border-radius: 10px;
+    padding: 20px;
+    /* border: 1px solid gray; */
+    box-shadow: 2px 1px 2px 2px #888888
+}
+
+.update-profile-pic{
+    display: flex;
+   
+}
+
+.edit-profile-pic{
+    width: 150px;
+    height: 150px;
+}
+
+.edit-profile-pic img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.profile-text-upload-img{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+
+.public-profile form input{
+    display: block;
+    width: 100%;
+    border: 1px solid gray;
+    padding: 10px 10px;
+}
+
+.public-profile form textarea{
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.public-profile #country{
+   width: 100%; 
+   padding: 10px 10px;
+}
+.public-profile #region{
+   width: 100%; 
+   padding: 10px 10px;
+}
+.public-profile #city{
+   width: 100%; 
+   padding: 10px 10px;
+}
+.public-profile #gender{
+   width: 100%; 
+   padding: 10px 10px;
+}

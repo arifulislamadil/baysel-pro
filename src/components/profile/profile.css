@@ -1,0 +1,65 @@
+.profile-background{
+    width: 100%;
+}
+
+.profile-background img{
+    width: 100%;
+    height: 300px;
+}
+
+.user-profile{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.profile-pic{
+    width: 150px;
+    height: 150px;
+    margin-top: -60px;
+}
+
+.profile-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid rgb(173, 171, 171);
+}
+
+.profile-list ul{
+    display: flex;
+}
+
+.profile-list ul li{
+    margin: 5px 7px;
+    padding: 5px 7px;
+
+
+}
+
+.edit-profile{
+    padding: 5px 7px;
+    margin: 6px 10px;
+    text-align: end;
+    color: blue;
+
+}
+
+.user-details-product-list{
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.product-menu-list{
+    border: 3px solid gray;
+    padding: 10px 30px;
+}
+
+.view-profile{
+    margin-top: 20px;
+    border: 2px solid gray;
+    padding: 10px;
+}

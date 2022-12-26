@@ -1,0 +1,43 @@
+.search-bar{
+    margin-top: 0px;
+    width: 100%;
+    margin-left: 0px;
+}
+
+
+
+/* Small mobile device  */
+@media all and (max-width: 48em){
+    .search-bar{
+        margin-top: -60px;
+        width: 50%;
+        margin-left: 80px;
+    }
+}
+/* large Mobile  */
+@media all and (min-width: 48em){
+    .search-bar{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+  
+}
+/* Tablet  */
+@media all and (min-width: 62em){
+    .search-bar{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+   
+ 
+}
+/* desktop and large */
+@media all and (min-width: 75em){
+    .search-bar{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+   
+  
+}

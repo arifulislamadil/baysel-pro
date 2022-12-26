@@ -1,0 +1,31 @@
+.edit-profile-list{
+    display: flex;
+}
+
+
+.edit-profile-list li{
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-left: 4px solid white;
+    
+}
+.edit-profile-list li a{
+    text-decoration: none;
+    transition: color .50s ease-out;
+    color: black
+    
+}
+.edit-profile-list li a:hover{
+    transition: color .20s ease-out;
+    color: rgb(2, 68, 248);
+}
+.edit-profile-list-link{
+    margin-left: 10px;
+    text-decoration: none;
+    transition: all 0.5 ease;
+}
+
+.edit-profile-list li:hover{
+    border-left: 4px solid rgb(10, 252, 200);
+
+}
