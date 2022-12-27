@@ -19,7 +19,7 @@ const UpdateProfile = () => {
                     </div>
                     <div className='profile-text-upload-img'>
                         <p>Clear frontal face photos are an important way for buyers and sellers to learn about each other.</p>
-                        <input type="file"  accept="image/*" onChange={onImageChange}/>
+                        <input type="file" multiple accept="image/*" onChange={onImageChange}/>
                     </div>
                 </div>
                 <h4>Public Profiles</h4>

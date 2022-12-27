@@ -1,0 +1,14 @@
+.my-purchases ul{
+    display: flex; 
+    padding: 0px;
+    
+}
+
+.my-purchases ul li{
+    margin-right: 10px;
+}
+
+
+
+
+

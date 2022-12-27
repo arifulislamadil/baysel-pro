@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import ChangePassword from '../changePassword/ChangePassword';
+import DataPrivacy from '../data&Privacy/DataPrivacy';
+import Notifications from '../notifications/Notifications';
 import UpdateProfile from '../updateProfile/UpdateProfile';
 import './EditProfile.css';
 
@@ -27,18 +29,21 @@ const EditProfile = () => {
                             >Change password</Link>
                         </li>
                         <li>
-                            <Link className='edit-profile-list-link' to="/">Notifications</Link>
+                            <Link className='edit-profile-list-link' onClick={()=>setView('notifications')}>Notifications</Link>
                         </li>
                         <li>
-                            <Link className='edit-profile-list-link' to="/">Data and privacy</Link>
+                            <Link className='edit-profile-list-link' onClick={()=>setView('data')}>Data and privacy</Link>
                         </li>
                     </ul>
                     {
                         view === 'upProfile' ? <UpdateProfile/> :
                         view === 'chgPass' ?<ChangePassword/> :
-                        <div><UpdateProfile/></div>
+                        view === 'notifications' ? <Notifications/> :
+                        view === 'data' ? <DataPrivacy/> :
+                        <div><UpdateProfile/></div> 
+
                     }
-                    <Outlet />
+                    {/* <Outlet /> */}
                 </div>
             </div>
         </div>

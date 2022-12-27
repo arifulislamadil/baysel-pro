@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./profile.css"
 import bannerImg from "../../assets/banner-img.jpg";
 import profile from "../../assets/profile.jfif";
@@ -8,8 +8,13 @@ import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRig
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import CampaignOutlinedIcon from '@mui/icons-material/CampaignOutlined';
+import Listings from '../listings/Listings';
+import Reviews from '../reviews/Reviews';
+import Balance from '../balance/Balance';
+import CarouBiz from '../carouBiz/CarouBiz';
 
 const Profile = () => {
+    const [list,setList]=useState([])
     return (
         <div>
             <div className='profile-background'>
@@ -23,16 +28,16 @@ const Profile = () => {
                     <div className='profile-list'>
                         <ul>
                             <li>
-                                <Link to="/">Listings</Link>
+                                <Link onClick={()=>setList('listings')}>Listings</Link>
                             </li>
                             <li>
-                                <Link to="/">Reviews</Link>
+                                <Link onClick={()=>setList('reviews')}>Reviews</Link>
                             </li>
                             <li>
-                                <Link to="/">Balance</Link>
+                                <Link onClick={()=>setList('balance')}>Balance</Link>
                             </li>
                             <li>
-                                <Link to="/">CarouBiz</Link>
+                                <Link onClick={()=>setList("carouBiz")}>CarouBiz</Link>
                             </li>
                         </ul>
                     </div>
@@ -85,7 +90,13 @@ const Profile = () => {
                         </div>
                     </div>
                     <div className='product-menu-list'>
-                        <h3>Listing product</h3>
+                        {
+                            list === "listings" ? <Listings/> :
+                            list === "reviews" ? <Reviews/>:
+                            list === "balance" ? <Balance/>:
+                            list === "carouBiz" ? <CarouBiz/>:
+                            <Listings/>
+                        }
                     </div>
                 </div>
             </div>

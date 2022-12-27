@@ -32,13 +32,13 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to={"/config"} className={({ isActive }) => (isActive ? 'nav-link activeNav' : 'nav-link')}>
-                Configuration
+              <NavLink to={"/fashion"} className={({ isActive }) => (isActive ? 'nav-link activeNav' : 'nav-link')}>
+                Fashion
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to={"/reports"} className={({ isActive }) => (isActive ? 'nav-link activeNav' : 'nav-link')}>
-                Reports
+              <NavLink to={"/luxury"} className={({ isActive }) => (isActive ? 'nav-link activeNav' : 'nav-link')}>
+                Luxury
               </NavLink>
             </li>
             <li className="nav-item">
@@ -58,11 +58,11 @@ const Navbar = () => {
                   <div>
                     <Link style={{ display: "flex" }} to="/settings"><span><SettingsOutlinedIcon /></span><span>setting</span></Link>
                   </div>
-                  <div><Link style={{ display: "flex" }} to="/"><span><ShoppingBagOutlinedIcon /></span><span>My purchases</span></Link>
+                  <div><Link style={{ display: "flex" }} to="/mypurchases"><span><ShoppingBagOutlinedIcon /></span><span>My purchases</span></Link>
 
                   </div>
                   <div>
-                    <NavLink style={{ display: "flex" }} to="/"><span><ReceiptOutlinedIcon /></span><span>My sales</span></NavLink>
+                    <NavLink style={{ display: "flex" }} to="/mysales"><span><ReceiptOutlinedIcon /></span><span>My sales</span></NavLink>
                   </div>
                   <div>
                     {isAuthenticated ?

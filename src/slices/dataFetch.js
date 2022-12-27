@@ -27,7 +27,7 @@ const initialState = {
 export const fetchData = createAsyncThunk(
   "datas/fetchData",
   async () => {
-    const res = await fetchParams.getAll();
+    const res = await fetchParams.getAll("products");
     return res.data;
   }
 );

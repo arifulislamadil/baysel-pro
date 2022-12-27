@@ -4,11 +4,11 @@ import "./footer.css"
 
 const footer = () => {
     return (
-        <div className='container'>
+        <div className='footer'>
             <div className="footer-clean">
                 <footer className='footer-main'>
-                    <div style={{marginTop:"20px"}}>
-                        <input type="text" placeholder="search advance" />
+                    <div style={{marginTop:"40px"}}>
+                        <input type="text" placeholder="Advance Search" />
                         <button>Search</button>
                     </div>
                     <div>
