@@ -4,6 +4,85 @@
 }
 
 .upload-sell-images{
-    background-color: rgb(239, 254, 254);
+    border: 1px solid gray;
     padding: 50px;
+    width: 100%;
+
+
+}
+
+.product-type-info   {
+    margin: 20px;
+    width: 100%;
+    padding: 50px;
+    border: 1px solid gray;
+   
+}
+.product-type-info select   {
+    width: 100%;
+   
+}
+
+
+
+/* Small mobile device  */
+@media all and (max-width: 48em){
+    .sell-main{
+        display: grid;
+        grid-template-columns: 1fr
+    }
+    .product-type-info   {
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+        padding: 50px;
+        border: 1px solid gray;
+       
+    }
+    
+}
+/* large Mobile  */
+@media all and (min-width: 48em){
+    .sell-main{
+        display: grid;
+        grid-template-columns: 1fr
+    }
+    .product-type-info   {
+        margin-top: 10px;
+        margin-left: 0px;
+        width: 100%;
+        padding: 50px;
+        border: 1px solid gray;
+       
+    }
+}
+/* Tablet  */
+@media all and (min-width: 62em){
+    .sell-main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr)
+    }
+    .product-type-info   {
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 100%;
+        padding: 50px;
+        border: 1px solid gray;
+       
+    }
+}
+/* desktop and large */
+@media all and (min-width: 75em){
+    .sell-main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .product-type-info   {
+        margin: 20px;
+        width: 100%;
+        padding: 50px;
+        border: 1px solid gray;
+       
+    }
 }

@@ -12,25 +12,31 @@ function Sell() {
   return (
     <div className="sell-main">
       <div className='upload-sell-images'>
-          <div>
-            <h3>Select Photos</h3>
-            <input type="file" onChange={imgFilehandler} />
-           <hr style={{width:"500px"}} />
-          </div>
-         
-          <div>
-            <h2>Preview</h2>
-            {imgfile.map((elem) => {
-              return <>
-                <span key={elem}>
-                  <img src={elem} height="100" width="100" alt="med1" />
-                </span>
-              </>
-            })}
-          </div>
+        <div>
+          <h3>Select Photos</h3>
+          <input type="file" onChange={imgFilehandler} />
+          <hr style={{ width: "500px" }} />
+        </div>
+
+        <div>
+          <h2>Preview</h2>
+          {imgfile.map((elem) => {
+            return <>
+              <span key={elem}>
+                <img src={elem} height="100" width="100" alt="med1" />
+              </span>
+            </>
+          })}
+        </div>
       </div>
-      <div>
-        <h4>Type of catagory</h4>
+      <div className='product-type-info'>
+        <label for="country"><h4>Select Your Product Type</h4></label>
+        <select id="country" name="country">
+          <option value="australia">Electronic</option>
+          <option value="canada">Fashion</option>
+          <option value="usa">Services</option>
+        </select>
+
       </div>
     </div>
   );

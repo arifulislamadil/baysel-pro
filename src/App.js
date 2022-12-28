@@ -47,10 +47,7 @@ const App = () => {
             <Route exact path="/settings" element={<EditProfile/>} end/>
             <Route exact path="/mypurchases" element={<MyPurchases/>} end/>
             <Route exact path="/mysales" element={<MySales/>} end/>
-            <Route exact path="/editProfile" element={<EditProfile/>}>
-                   {/* <Route exact path="updateProfile" element={<UpdateProfile/>}/> */}
-                   {/* <Route exact path="changePassword" element={<ChangePassword/>}/> */}
-            </Route>
+            <Route exact path="/editProfile" element={<EditProfile/>}></Route>
             <Route exact path="/reports" element={<Reports/>} end/>
           </Routes>
         </div>
