@@ -42,9 +42,11 @@ const UpdateProfile = () => {
                         </select>
                         <label for="region">Region</label>
                         <select id="region" name="region">
-                            <option value="Dubai">Dubai</option>
-                            <option value="KL">KL</option>
-                            <option value="Dhaka">Dhaka</option>
+                            <option value="Dubai">Asia</option>
+                            <option value="KL">Australia</option>
+                            <option value="Dhaka">North America</option>
+                            <option value="Dhaka">South America</option>
+                            <option value="Dhaka">Europe</option>
                         </select>
                         <label for="city">Region</label>
                         <select id="city" name="city">

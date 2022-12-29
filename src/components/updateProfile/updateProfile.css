@@ -1,7 +1,7 @@
 .profile-pic-main{
     border-radius: 10px;
     padding: 20px;
-    /* border: 1px solid gray; */
+    border: 1px solid gray;
     box-shadow: 2px 1px 2px 2px #888888
 }
 
@@ -40,21 +40,44 @@
     padding: 10px 10px;
 }
 
-.public-profile #country{
-   width: 100%; 
-   padding: 10px 10px;
-}
-.public-profile #region{
-   width: 100%; 
-   padding: 10px 10px;
-}
-.public-profile #city{
-   width: 100%; 
-   padding: 10px 10px;
-}
-.public-profile #gender{
+.public-profile #country, #region, #city, #gender{
    width: 100%; 
    padding: 10px 10px;
 }
 
 
+
+/* Small mobile device  */
+@media all and (max-width: 48em){
+    .update-profile-pic{
+        display: grid;
+
+       
+    }
+    
+}
+/* large Mobile  */
+@media all and (min-width: 48em){
+    .update-profile-pic{
+        display: grid;
+  
+       
+    }
+}
+/* Tablet  */
+@media all and (min-width: 62em){
+    .update-profile-pic{
+        display: flex;
+       
+    }
+    
+    
+}
+/* desktop and large */
+@media all and (min-width: 75em){
+    
+    .update-profile-pic{
+        display: flex;
+       
+    }
+}

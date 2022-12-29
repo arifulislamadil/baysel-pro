@@ -43,7 +43,19 @@
     color: blue;
 
 }
-
+.edit-profile button{
+    border: 1px solid gray;
+    transition: all 0.5s ease;
+    
+}
+.edit-profile button:hover{
+    background-color: rgb(35, 219, 176);
+}
+.edit-profile a:hover{
+    list-style: none;
+    text-decoration: none;
+   
+}
 .user-details-product-list{
     display: grid;
     grid-template-columns: 4fr 8fr;
@@ -51,6 +63,7 @@
     grid-row-gap: 20px;
     justify-items: stretch;
     align-items: stretch;
+    ;
 }
 
 .product-menu-list{
@@ -63,3 +76,65 @@
     border: 2px solid gray;
     padding: 10px;
 }
+
+
+
+
+/* Small mobile device  */
+@media all and (max-width: 48em){
+    .user-profile{
+        display: grid;
+        grid-template-columns: 1fr
+    }
+    .profile-pic{
+        width: 150px;
+        height: 150px;
+        margin-top: -60px;
+        margin-left: 160px;
+    }
+    
+}
+/* large Mobile  */
+@media all and (min-width: 48em){
+    .user-profile{
+        display: grid;
+        grid-template-columns: 1fr
+    }
+    .profile-pic{
+        width: 150px;
+        height: 150px;
+        margin-top: -60px;
+        margin-left: 160px;
+    }
+}
+/* Tablet  */
+@media all and (min-width: 62em){
+    .user-profile{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .profile-pic{
+        width: 150px;
+        height: 150px;
+        margin-top: -60px;
+        margin-left: 0px;
+    }
+    
+    
+    
+}
+/* desktop and large */
+@media all and (min-width: 75em){
+    
+    .user-profile{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .profile-pic{
+        width: 150px;
+        height: 150px;
+        margin-top: -60px;
+        margin-left: 0px;
+    }
+}
+

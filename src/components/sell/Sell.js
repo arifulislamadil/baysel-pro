@@ -35,8 +35,13 @@ function Sell() {
           <option value="australia">Electronic</option>
           <option value="canada">Fashion</option>
           <option value="usa">Services</option>
+          <option value="usa">Luxury</option>
+          <option value="usa">Clothes</option>
+          <option value="usa">Mobile</option>
+          <option value="usa">Cars</option>
+          <option value="usa">House staff</option>
+          <option value="usa">Books</option>
         </select>
-
       </div>
     </div>
   );

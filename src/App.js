@@ -37,6 +37,7 @@ const App = () => {
         <div className="container mt-3">
           <Routes>
             <Route exact path="/" element={<Home/>} end/>
+            <Route exact path="/:id" element={<Home/>} end/>
             <Route exact path="/productSingle" element={<ProductSingle/>} end/>
             <Route exact path="/fashion" element={<Fashion/>} end/>
             <Route exact path="/luxury" element={<Luxury/>} end/>
