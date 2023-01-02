@@ -2,8 +2,9 @@ import http from "../webservice/http-common";
 
 const fetchParams = {
   getAll() {
-    return http.get("");
+    return http.get("/products");
   },
+ 
 
   
   getAllPrice() {

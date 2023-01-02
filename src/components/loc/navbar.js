@@ -18,10 +18,10 @@ const Navbar = () => {
   return (
     <nav>
 
-      <div className="nav-bar">
+      <div className="container nav-bar">
         <div>
           <Link end to={"/"} className="navbar-brand">
-            <p style={{ fontWeight: '300' }}>baysel</p>
+            <p style={{ fontWeight: '300' }}>Bay<span id="logo-sel">Sel</span></p>
           </Link>
         </div>
         <div className="nav-menu">

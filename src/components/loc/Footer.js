@@ -4,7 +4,7 @@ import "./footer.css"
 
 const footer = () => {
     return (
-        <div className='footer'>
+        <div className='container footer '>
             <div className="footer-clean">
                 <footer className='footer-main'>
                     <div style={{marginTop:"40px"}}>

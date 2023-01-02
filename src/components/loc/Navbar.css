@@ -1,9 +1,11 @@
 .nav-bar{
     display: flex;
     justify-content: space-between;
-    padding: 0 40px;
-}
 
+}
+#logo-sel{
+    color: crimson;
+}
 .nav-menu ul{
  display: flex;
 }

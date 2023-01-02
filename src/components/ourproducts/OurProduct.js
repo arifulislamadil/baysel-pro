@@ -32,7 +32,8 @@ const OurProduct = () => {
                             <img src={user.image} alt=""/>
                             <p>{user.title.slice(0,20)}</p>
                             <span>Price : {user.price}</span>
-                            <Link to={user.id}>Buy</Link>
+                            <br/>
+                          <Link to="/">Details</Link>
                         </div>)
                 }
             </div>

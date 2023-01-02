@@ -36,6 +36,7 @@
 @media all and (max-width: 48em){
     .edit-profile-list{
         display: grid;
+        font-size: 12px;
     }
     .edit-profile-list ul{
         display: flex;
@@ -45,6 +46,7 @@
 @media all and (min-width: 48em){
     .edit-profile-list{
         display: grid;
+        font-size: 15px;
     }
     .edit-profile-list ul{
         display: flex;
