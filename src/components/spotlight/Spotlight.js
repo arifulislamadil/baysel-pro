@@ -13,7 +13,6 @@ const Spotlight = () => {
     useEffect(() => {
         dispatch(fetchData())
     }, []);
-    console.log(users)
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.

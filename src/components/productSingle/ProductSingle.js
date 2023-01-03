@@ -27,8 +27,8 @@ const ProductSingle = () => {
                             infiniteLoop={true}
                             autoPlay={true} >
                             {
-                                users.map(user => <>
-                                    <div className='image'>
+                                users.map((user) => <>
+                                    <div className='image' key={user.id}>
                                         <img style={{ width: "500px", height: "400px" }} src={user.image} />
                                     </div>
                                 </>)

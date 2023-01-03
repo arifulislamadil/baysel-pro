@@ -10,7 +10,6 @@ const OurProduct = () => {
     useEffect(() => {
         dispatch(fetchData())
     }, [])
-    console.log(users)
     return (
         <div>
             <div>
@@ -26,8 +25,8 @@ const OurProduct = () => {
             </div>
             <div className='product-list'>
                 {
-                    users.map(user =>
-                        <div className='single-product'>
+                    users.map((user) =>
+                        <div className='single-product' key={user.id}>
                             <h3>{user.id}</h3>
                             <img src={user.image} alt=""/>
                             <p>{user.title.slice(0,20)}</p>
