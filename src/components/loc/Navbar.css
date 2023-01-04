@@ -1,22 +1,46 @@
 .nav-bar{
+    margin-top: 10px;
+}
+.nav-bar{
     display: flex;
     justify-content: space-between;
 
+}
+
+.navbar-brand p span{
+    font-size: large;
+    font-weight: 600;
 }
 #logo-sel{
     color: crimson;
 }
 .nav-menu ul{
  display: flex;
+ /* margin-top: 10px; */
+}
+.nav-menu ul li {
+    margin-right: 10px;
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.nav-menu ul li:hover {
+    background-color: rgba(3, 3, 3, 0.578);
+}
+.nav-menu ul li a {
+    color: rgb(6, 6, 6)
+}
+.nav-menu ul li a:hover{
+    color: white
 }
 
 
-.navbar-list ul li {
+/* .navbar-list ul li {
     list-style: none;
 }
+
 .navbar-list ul li a{
     text-decoration: none;
-}
+
+} */
 
 
 .user-info{
@@ -83,7 +107,9 @@
     color: white;
 
 }
-
+.btn-Lis div:nth-child(n + 1){
+    margin-left: 10px;
+}
 
 
 /* Small mobile device  */

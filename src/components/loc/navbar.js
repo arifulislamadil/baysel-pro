@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="container nav-bar">
         <div>
           <Link end to={"/"} className="navbar-brand">
-            <p style={{ fontWeight: '300' }}>Bay<span id="logo-sel">Sel</span></p>
+            <p style={{ fontWeight: '600' }}>Bay<span id="logo-sel">Sel</span></p>
           </Link>
         </div>
         <div className="nav-menu">
@@ -43,7 +43,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <NavLink to={"/productSingle"} className={({ isActive }) => (isActive ? 'nav-link activeNav' : 'nav-link')}>
-                Single Product
+                Product
               </NavLink>
             </li>
 
@@ -68,7 +68,7 @@ const Navbar = () => {
                     {isAuthenticated ?
                       <div id="to-space">
                         {/* <p>{user.email}</p> */}
-                        <Button style={{ marginLeft: "20px",marginTop:"10px",marginBottom:"10px" }} variant="contained" onClick={() => logout({ returnTo: window.location.origin })}>
+                        <Button style={{ marginLeft: "20px", marginTop: "10px", marginBottom: "10px" }} variant="contained" onClick={() => logout({ returnTo: window.location.origin })}>
                           Log Out
                         </Button>
                       </div>
@@ -79,10 +79,10 @@ const Navbar = () => {
 
               <div className="btn-Lis">
                 <div>
-                 <Link to='/mylike'><FavoriteBorderIcon /></Link>
+                  <Link to='/mylike'><FavoriteBorderIcon /></Link>
                 </div>
                 <div>
-                 <Link to="/message"> <ChatBubbleOutlineIcon /></Link>
+                  <Link to="/message"> <ChatBubbleOutlineIcon /></Link>
                 </div>
                 <div className="sell-btn">
                   <Link to="/sell"><button>Sell</button></Link>

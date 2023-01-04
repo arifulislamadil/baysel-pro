@@ -1,0 +1,107 @@
+.chat-box-main{
+
+   border-radius: 20px;
+}
+.inbox-main{
+    display: grid;
+    grid-template-columns: repeat(1, 4fr 8fr)
+}
+
+.inbox{
+    margin: 20px;
+}
+.user-profile-pic{
+    width: 50px;
+    height: 50px;
+   
+}
+
+.chat-box{
+    padding: 10px;
+    border-bottom: 1px solid rgb(202, 199, 199);
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(244, 245, 245);
+    margin-bottom: 0px;
+}
+
+.chat-field{
+    height: 400px;
+    background-color: rgb(241, 242, 244);
+}
+
+.chat-details{
+    height: 400px;
+    background-color: gray;
+}
+
+.chat-box-product-main{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(235 234 234);
+    padding: 10px;
+}
+.chat-offer-chat-rate{
+    margin-top: 5px;
+}
+.chat-offer-chat-rate button{
+    margin-left: 10px;
+    border: none;
+    padding: 5px 10px;
+}
+.chat-offer-chat-rate button:nth-child(1){
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    padding: 7px 12px;
+}
+.chat-offer-chat-rate button:nth-child(2){
+    border: 2px solid rgb(151, 154, 151);
+    font-weight: 600;
+    color: rgb(14, 14, 14);
+}
+.user-profile-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.chat-box-product{
+    display: flex;
+}
+.chat-inbox{
+    background-color: rgb(221, 222, 223);
+}
+
+.chat-inbox input{
+    border-radius: 5px;
+    position: relative;
+    padding: 10px 0;
+    border: 2px solid rgb(171, 171, 171);
+}
+.chat-inbox span{
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+
+.user-text{
+    display: grid;
+    border: 1px solid rgb(193, 186, 186);
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    grid-template-columns: repeat(1, 2fr 8fr 2fr);
+}
+
+.product-pic{
+    width: 50px;
+    height: 50px;
+}
+
+.product-pic img{
+    width: 100%;
+    height: 100%;
+}

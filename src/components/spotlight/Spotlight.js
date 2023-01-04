@@ -14,26 +14,21 @@ const Spotlight = () => {
         dispatch(fetchData())
     }, []);
     const responsive = {
-        superLargeDesktop: {
-            // the naming can be any, depends on you.
-            breakpoint: { max: 4000, min: 3000 },
-            items: 8,
-        },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 5,
-           
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
             items: 4,
-           
-        },
-        mobile: {
+            partialVisibilityGutter: 40 // this is needed to tell the amount of px that should be visible.
+          },
+          tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2,
+            partialVisibilityGutter: 30 // this is needed to tell the amount of px that should be visible.
+          },
+          mobile: {
             breakpoint: { max: 464, min: 0 },
             items: 1,
-           
-        }
+            partialVisibilityGutter: 30 // this is needed to tell the amount of px that should be visible.
+          }
     };
 
     return (
@@ -42,7 +37,7 @@ const Spotlight = () => {
                 swipeable={true}
                 draggable={true}
                 autoPlay={true}
-                autoPlaySpeed={3000}
+                autoPlaySpeed={5000}
                 keyBoardControl={true}
                 arrows={false}
                 renderButtonGroupOutside={true}
@@ -52,7 +47,7 @@ const Spotlight = () => {
                 responsive={responsive}>
                 {
                     users.map(user =>
-                        <div className='spotlight'>
+                        <div style={{marginTop: "10px"}} className='spotlight'>
                             <img src={user.image} alt=""/>
                             <h3>{user.id}</h3>
                             <h3>{user.title.slice(0,20)}</h3>
