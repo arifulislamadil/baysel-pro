@@ -3,7 +3,9 @@
   max-width: 750px;
   margin: auto;
 }
-
+.components-size{
+  margin: 0px 250px;
+}
 .submit-form {
   max-width: 300px;
   margin: auto;
@@ -20,4 +22,30 @@ Table {
 li{
   list-style: none;
   
+}
+
+
+/* Small mobile device  */
+@media all and (max-width: 48em){
+  .components-size{
+    margin: 0px 10px;
+  }
+}
+/* large Mobile  */
+@media all and (min-width: 48em){
+  .components-size{
+    margin: 0px 10px;
+  }
+}
+/* Tablet  */
+@media all and (min-width: 62em){
+  .components-size{
+    margin: 0px 100px;
+  }
+}
+/* desktop and large */
+@media all and (min-width: 75em){
+  .components-size{
+    margin: 0px 250px;
+  }
 }

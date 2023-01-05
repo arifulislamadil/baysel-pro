@@ -34,7 +34,7 @@ const App = () => {
     return (
       <Router>
         <Navbar/>
-        <div className="container mt-3">
+        <div className="components-size mt-3">
           <Routes>
             <Route exact path="/" element={<Home/>} end/>
             <Route exact path="/:id" element={<Home/>} end/>

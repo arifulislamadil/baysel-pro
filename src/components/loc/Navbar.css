@@ -1,12 +1,14 @@
 .nav-bar{
-    margin-top: 10px;
+    margin: 10px 200px 10px 200px;
 }
 .nav-bar{
     display: flex;
     justify-content: space-between;
 
 }
-
+.navbar-brand p{
+    color: #20b625;
+}
 .navbar-brand p span{
     font-size: large;
     font-weight: 600;
@@ -33,15 +35,6 @@
 }
 
 
-/* .navbar-list ul li {
-    list-style: none;
-}
-
-.navbar-list ul li a{
-    text-decoration: none;
-
-} */
-
 
 .user-info{
     margin-top: 10px;
@@ -52,10 +45,10 @@
 .dropbtn {
     background-color: #4CAF50;
     color: white;
-    padding: 5px;
-    font-size: 16px;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
+    padding: 8px 20px;
   }
   
   /* The container <div> - needed to position the dropdown content */
@@ -73,7 +66,7 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    margin-left: -35px;
+    margin-top: 5px;
   }
   
   /* Links inside the dropdown */
@@ -101,19 +94,51 @@
   background-color: #3e8e41;
 }
 
-.sell-btn button{
+.sell-btn{
     border: none;
     background-color: red;
-    color: white;
+    padding: 8px 40px;
+    border-radius: 10px;
+}
 
+.sell-btn a{
+    color: white;
+    text-decoration: none;
+}
+.btn-Lis{
+    margin-top: -8px;
+    align-items: center;
+}
+
+.btn-Lis div:nth-child(1) {
+    background-color: #4CAF50;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+.btn-Lis div:nth-child(1) a{
+    color: white;
+}
+.btn-Lis div:nth-child(2){
+    background-color: #4CAF50;
+    padding: 5px 20px;
+    border-radius: 10px;
+
+}
+
+.btn-Lis div:nth-child(2) a{
+    color: white;
 }
 .btn-Lis div:nth-child(n + 1){
     margin-left: 10px;
+   
 }
 
 
 /* Small mobile device  */
 @media all and (max-width: 48em){
+    .nav-bar{
+        margin: 10px 10px 10px 10px;
+    }
     .btn-Lis{
         display: none;
     }
@@ -121,11 +146,15 @@
         display: none;
        }
        .dropdown{
-        margin-right: 40px;
+        margin-right: 20px;
        }
+
 }
 /* large Mobile  */
 @media all and (min-width: 48em){
+    .nav-bar{
+        margin: 10px 100px 10px 100px;
+    }
 
     .btn-Lis{
         display: flex;
@@ -133,13 +162,20 @@
 }
 /* Tablet  */
 @media all and (min-width: 62em){
+    .nav-bar{
+        margin: 10px 200px 10px 200px;
+    }
     .btn-Lis{
         display: flex;
     }
+
  
 }
 /* desktop and large */
 @media all and (min-width: 75em){
+    .nav-bar{
+        margin: 10px 200px 10px 200px;
+    }
     .btn-Lis{
         display: flex;
     }

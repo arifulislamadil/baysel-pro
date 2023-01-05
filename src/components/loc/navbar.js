@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <nav>
 
-      <div className="container nav-bar">
+      <div className="nav-bar">
         <div>
           <Link end to={"/"} className="navbar-brand">
             <p style={{ fontWeight: '600' }}>Bay<span id="logo-sel">Sel</span></p>
@@ -50,7 +50,7 @@ const Navbar = () => {
 
             <div className="user-info">
               <div className="dropdown">
-                <span className="dropbtn">User</span>
+                <span className="dropbtn">Dashboard</span>
                 <div className="dropdown-content">
                   <div >
                     <Link style={{ display: "flex" }} to="/profile"><span><Person2OutlinedIcon /></span><span>Profile</span></Link>
@@ -85,7 +85,7 @@ const Navbar = () => {
                   <Link to="/message"> <ChatBubbleOutlineIcon /></Link>
                 </div>
                 <div className="sell-btn">
-                  <Link to="/sell"><button>Sell</button></Link>
+                  <Link to="/sell">Sell</Link>
                 </div>
               </div>
             </div>

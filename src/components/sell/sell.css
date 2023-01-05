@@ -7,13 +7,10 @@
     /* border: 1px solid gray; */
     padding: 50px;
     width: 100%;
-
-
 }
 
 .product-type-info select   {
-    width: 100%;
-   
+    width: 100%; 
 }
 
 
@@ -22,9 +19,7 @@
     .sell-main{
         display: grid;
         grid-template-columns: 1fr
-    }
- 
-    
+    } 
 }
 /* large Mobile  */
 @media all and (min-width: 48em){

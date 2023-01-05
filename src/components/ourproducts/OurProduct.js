@@ -13,9 +13,9 @@ const OurProduct = () => {
     return (
         <div>
             <div>
-                <h3>Trending now</h3>
+                <h3>Trending Now</h3>
             </div>
-            <div>
+            <div className='trending-list'>
                 <button>Bicycle</button>
                 <button>Coffee Table</button>
                 <button>Lego</button>

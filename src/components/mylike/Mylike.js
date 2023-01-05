@@ -14,8 +14,8 @@ const Mylike = () => {
                         <div className='user-profile-like'>
                             <img src={userProfile} />
                         </div>
-                        <div>
-                            <p>customise.my.bicycle</p>
+                        <div style={{marginLeft:"20px"}}>
+                            <p>Customise.my.bicycle</p>
                             <span> 9 days ago</span>
                         </div>
                     </div>

@@ -21,8 +21,8 @@ const SearchBar = () => {
     return (
         <div>
             <div className='search-bar' style={{display:"flex"}}>
-                <input onChange={handleSearchField} id="search-field" style={{width: "100%"}} type="text" placeholder="search product" />
-                <button onClick={()=>handleSearchBtn()}>Search</button>
+                <input onChange={handleSearchField} id="search-field" type="text" placeholder="search product" />
+                <button className='search-bar-btn' onClick={()=>handleSearchBtn()}>Search</button>
             </div>
         </div>
     );

@@ -1,43 +1,68 @@
-.search-bar{
+.search-bar {
     margin-top: 0px;
     width: 100%;
     margin-left: 0px;
 }
 
+.search-bar input {
+    padding: 5px 10px;
+    width: 100%;
+    border-right: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+}
+
+.search-bar-btn{
+    background-color: #151815;
+    color: white;
+    border: 2px solid rgb(3, 255, 62);
+    border: none;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
 
 
 /* Small mobile device  */
-@media all and (max-width: 48em){
-    .search-bar{
+@media all and (max-width: 48em) {
+    .search-bar {
         margin-top: -60px;
         width: 50%;
         margin-left: 80px;
     }
 }
+
 /* large Mobile  */
-@media all and (min-width: 48em){
-    .search-bar{
+@media all and (min-width: 48em) {
+    .search-bar {
         margin-top: 0px;
         margin-left: 0px;
     }
 
-  
+
 }
+
 /* Tablet  */
-@media all and (min-width: 62em){
-    .search-bar{
+@media all and (min-width: 62em) {
+    .search-bar {
         margin-top: 0px;
         margin-left: 0px;
     }
-   
- 
+
+
 }
+
 /* desktop and large */
-@media all and (min-width: 75em){
-    .search-bar{
+@media all and (min-width: 75em) {
+    .search-bar {
         margin-top: 0px;
         margin-left: 0px;
     }
-   
-  
+
+
 }
