@@ -13,7 +13,7 @@ const Message = () => {
     return (
         <div className='inbox-main'>
             <div className='inbox'>
-                <input style={{ width: "100%" }} type='text' placeholder="Search Message, Listings, usernames" />
+                <input type='text' placeholder="Search Message, Listings, usernames" />
                 <h3 style={{marginTop:"20px"}}>Inbox <span><KeyboardArrowDownIcon /></span></h3>
                 <hr />
 

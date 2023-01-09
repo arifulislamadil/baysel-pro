@@ -1,8 +1,9 @@
 import React from 'react';
+import "./luxury.css"
 
 const Luxury = () => {
     return (
-        <div>
+        <div className='luxury-main'>
             <h3>Luxury</h3>
         </div>
     );

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ChangePassword from '../changePassword/ChangePassword';
 import DataPrivacy from '../data&Privacy/DataPrivacy';
 import Notifications from '../notifications/Notifications';

@@ -10,11 +10,14 @@
     border-right: none;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
+    border: none;
+    border: 2px solid lightgray;
 
 }
 
+
 .search-bar-btn{
-    background-color: #151815;
+    background-color:  #090909a9;
     color: white;
     border: 2px solid rgb(3, 255, 62);
     border: none;
