@@ -1,12 +1,16 @@
 
+import { Box, CircularProgress } from "@mui/material";
 import React from "react";
-// import loading from "../../assets/loading.svg"
 import './loc.css'
+
 
 const Loading = () => (
   <div className="spinner">
-    {/* <img src={loading} alt="Loading" /> */}
-    <h2>Loading....</h2>
+    <Box style={{ display: "flex", justifyContent: "center", marginTop: "350px" }} sx={{ display: 'flex' }}>
+      <span className="spinner-body">
+        <CircularProgress />
+      </span>
+    </Box>
   </div>
 );
 

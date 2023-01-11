@@ -1,8 +1,16 @@
 import { useState } from 'react';
+import Electronic from '../productType/electronic/Electronic';
 import "./sell.css"
 
 function Sell() {
-  const [imgfile, uploadimg] = useState([])
+  const [imgfile, uploadimg] = useState([]);
+  const [product, setProduct] = useState("");
+
+
+
+  const handleChange = e => {
+    setProduct(e.target.value)
+  }
   console.log("Image FIles", imgfile);
   const imgFilehandler = (e) => {
     if (e.target.files.length !== 0) {
@@ -30,18 +38,35 @@ function Sell() {
         </div>
       </div>
       <div className='product-type-info'>
-        <label for="country"><h4>Select Your Product Type</h4></label>
-        <select id="country" name="country">
-          <option value="australia">Electronic</option>
-          <option value="canada">Fashion</option>
-          <option value="usa">Services</option>
-          <option value="usa">Luxury</option>
-          <option value="usa">Clothes</option>
-          <option value="usa">Mobile</option>
-          <option value="usa">Cars</option>
-          <option value="usa">House staff</option>
-          <option value="usa">Books</option>
-        </select>
+        <div>
+          <label for="product"><h4>Select Your Product Type</h4></label>
+          <select onClick={handleChange} id="product" name="product">
+            <option >select your product type</option>
+            <option value="electronic">Electronic</option>
+            <option value="fashion">Fashion</option>
+            <option value="services">Services</option>
+            <option value="luxury">Luxury</option>
+            <option value="clothes">Clothes</option>
+            <option value="mobile">Mobile</option>
+            <option value="cars">Cars</option>
+            <option value="house-staff">House staff</option>
+            <option value="books">Books</option>
+          </select>
+        </div>
+        <div>
+          {
+            product == "electronic" ? <Electronic /> :
+              product == "fashion" ? <div><h3>Fashion</h3></div> :
+                product == "services" ? <div><h3>Services</h3></div> :
+                  product == "luxury" ? <div><h3>Luxury</h3></div> :
+                    product == "clothes" ? <div><h3>Clothes</h3></div> :
+                      product == "mobile" ? <div><h3>Mobile</h3></div> :
+                        product == "cars" ? <div><h3>Cars</h3></div> :
+                          product == "house-staff" ? <div><h3>House staff</h3></div> :
+                          product == "books" ? <div><h3>Book</h3></div> :
+                            <div><h3></h3></div>
+          }
+        </div>
       </div>
     </div>
   );

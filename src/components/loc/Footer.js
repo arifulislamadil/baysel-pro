@@ -21,7 +21,7 @@ const footer = () => {
                 <footer className='footer-main'>
                     <div>
                         <Link end to={"/"} className="navbar-brand">
-                            <p style={{ fontWeight: '600' }}>Bay<span id="logo-sel">Sel</span></p>
+                            <p style={{ fontWeight: '900', fontSize: "25px" }}>Bay<span id="logo-sel" style={{ fontWeight: '900', fontSize: "25px" }}>Sel</span></p>
                         </Link>
                         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over</p>
                     </div>
@@ -44,11 +44,11 @@ const footer = () => {
                         </ul>
                     </div>
                     <div className='footer-social-media'>
-                        <button><Link style={{color:"white", textDecoration:"none"}} to="/sell">Sell</Link></button>
+                        <button><Link style={{ color: "white", textDecoration: "none" }} to="/sell">Sell</Link></button>
                         <div>
                             <ul>
                                 <li>
-                                    <a rel="noopener noreferrer" href="http://facebook.com" target="_blank"><FacebookOutlinedIcon/></a></li>
+                                    <a rel="noopener noreferrer" href="http://facebook.com" target="_blank"><FacebookOutlinedIcon /></a></li>
                                 <li>
                                     <a rel="noopener noreferrer" href="https://www.instagram.com/" target="_blank"><InstagramIcon /></a></li>
                                 <li>

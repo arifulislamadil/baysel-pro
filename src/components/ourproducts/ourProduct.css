@@ -8,7 +8,6 @@
 .single-product {
     width: 100%;
     border: 2px solid rgb(209, 205, 205);
-    padding: 30px;
     cursor: pointer;
     transition: all 0.2s ease;
 }
@@ -36,27 +35,38 @@
 .trending-list button:hover{
     background-color: #c2c1c1;
 }
-/* Small mobile device  */
-@media all and (max-width: 48em){
+
+/* ...........................................  */
+
+ /* very small device  */
+ @media screen and (max-width: 320px) {
     .product-list {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: 10px;
         margin-top: 20px;
     }
 }
-/* large Mobile  */
-@media all and (min-width: 48em){
+/* small device phone  */
+@media screen and (min-width: 321px) and (max-width: 480px) {
     .product-list {
         display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        margin-top: 20px;
+    }
+}
+/* smart phone  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .product-list {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
         margin-top: 20px;
 
     }
 }
-/* Tablet  */
-@media all and (min-width: 62em){
+/* Tablet device  */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .product-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -64,12 +74,12 @@
         margin-top: 20px;
     }
 }
-/* desktop and large */
-@media all and (min-width: 75em){
+/* big screen  */
+@media screen and (min-width: 1025px) {
     .product-list {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 10px;
         margin-top: 20px;
-    }
+    } 
 }

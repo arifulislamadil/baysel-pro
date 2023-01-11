@@ -7,9 +7,7 @@ import UpdateProfile from '../updateProfile/UpdateProfile';
 import './EditProfile.css';
 
 const EditProfile = () => {
-
     const [view,setView] = useState([])
-
     return (
         <div>
             <div>
@@ -41,7 +39,6 @@ const EditProfile = () => {
                         view === 'notifications' ? <Notifications/> :
                         view === 'data' ? <DataPrivacy/> :
                         <div><UpdateProfile/></div> 
-
                     }
                     {/* <Outlet /> */}
                 </div>

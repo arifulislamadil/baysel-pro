@@ -17,11 +17,10 @@ const Navbar = () => {
   const { user, isAuthenticated, isLoading, logout } = useAuth0();
   return (
     <nav>
-
       <div className="nav-bar">
         <div>
           <Link end to={"/"} className="navbar-brand">
-            <p style={{ fontWeight: '600' }}>Bay<span id="logo-sel">Sel</span></p>
+            <p style={{ fontWeight: '900', fontSize:"25px" }}>Bay<span id="logo-sel" style={{ fontWeight: '900',fontSize:"25px" }}>Sel</span></p>
           </Link>
         </div>
         <div className="nav-menu">
