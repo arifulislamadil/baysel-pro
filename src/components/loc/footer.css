@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: end;
     padding: 40px;
+    /* background-color: red; */
     margin: 10px 10px 0px 10px;
 }
 
@@ -78,49 +79,61 @@
 }
 
 
-/* Small mobile device  */
-@media all and (max-width: 500px) {
+
+/* ...........................................  */
+
+ /* very small device  */
+ @media screen and (max-width: 320px) {
     .footer-main {
-        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 40px;
+        margin: 10px 20px 0px 20px;
+    }
+    .footer-text h1{
+        font-size: 20px;
+    }
+}
+/* small device phone  */
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    .footer-main {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 40px;
+        margin: 10px 20px 0px 20px;
+    }
+    .footer-text h1{
+        font-size: 20px;
+    }
+}
+/* smart phone  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .footer-main {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px;
+        margin: 10px 20px 0px 20px;
+    }
+    .footer-text h1{
+        font-size: 25px;
+    }
+}
+/* Tablet device  */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .footer-main {
         grid-template-columns: repeat(3, 1fr);
         padding: 40px;
         margin: 10px 20px 0px 20px;
     }
-
+    .footer-text h1{
+        font-size: 30px;
+    }
 }
-
-/* large Mobile  */
-@media all and (min-width: 500px) {
+/* big screen  */
+@media screen and (min-width: 1025px) {
     .footer-main {
-        display: grid;
         grid-template-columns: repeat(4, 1fr);
         padding: 40px;
         margin: 10px 20px 0px 20px;
+    } 
+    .footer-text h1{
+        font-size: 40px;
     }
-
-}
-
-/* Tablet  */
-@media all and (min-width: 62em) {
-    .footer-main {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        padding: 40px;
-        margin: 10px 50px 0px 50px;
-    }
-
-
-
-}
-
-/* desktop and large */
-@media all and (min-width: 75em) {
-    .footer-main {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        padding: 40px;
-        margin: 10px 200px 0px 200px;
-    }
-
-
 }

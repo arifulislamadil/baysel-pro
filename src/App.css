@@ -25,27 +25,35 @@ li{
 }
 
 
-/* Small mobile device  */
-@media all and (max-width: 48em){
+/* ...........................................  */
+
+ /* very small device  */
+ @media screen and (max-width: 320px) {
   .components-size{
     margin: 0px 10px;
   }
 }
-/* large Mobile  */
-@media all and (min-width: 48em){
+/* small device phone  */
+@media screen and (min-width: 321px) and (max-width: 480px) {
   .components-size{
     margin: 0px 10px;
   }
 }
-/* Tablet  */
-@media all and (min-width: 62em){
+/* smart phone  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .components-size{
+    margin: 0px 10px;
+  }
+}
+/* Tablet device  */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .components-size{
     margin: 0px 100px;
   }
 }
-/* desktop and large */
-@media all and (min-width: 75em){
+/* big screen  */
+@media screen and (min-width: 1025px) {
   .components-size{
     margin: 0px 250px;
-  }
+  } 
 }
